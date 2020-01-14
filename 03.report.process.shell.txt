@@ -1,0 +1,21 @@
+ps man | tail -n 10
+ 3025 pts/4    -      0:00 sudo nano /etc/hosts
+    - -        S+     0:00 -
+ 3026 pts/4    -      0:00 nano /etc/hosts
+    - -        S+     0:00 -
+ 3029 pts/5    -      0:01 bash
+    - -        Ss     0:01 -
+ 4790 pts/5    -      0:00 ps man
+    - -        R+     0:00 -
+ 4791 pts/5    -      0:00 tail -n 10
+    - -        S+     0:00 -
+gnome-calculator | tail -n 10
+ps aux | grep gnome-calculator|tail -n 10
+casker2+  5065  0.3  0.5 790608 40920 pts/5    Sl+  09:37   0:00 gnome-calculator
+casker2+  5113  0.0  0.0  15968  1108 pts/6    S+   09:39   0:00 grep --color=auto gnome-calculator
+ls -l /proc/5065/status
+-r--r--r-- 1 casker2209 casker2209 0 Jan 14 09:37 /proc/5065/status
+
+kill -s stop 5065
+kill -s cont 5065
+kill -s kill 5065

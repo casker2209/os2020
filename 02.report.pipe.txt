@@ -22,3 +22,8 @@ power management:
 find ~/Pictures -name *.jpg | wc -l >> 02.report.pipe.txt
 
 0
+free -h | grep Mem | awk {' print '}
+7,7G
+7,7G
+free -h | grep Mem | awk {' print '}
+7,7G

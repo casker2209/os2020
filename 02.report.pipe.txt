@@ -1,3 +1,4 @@
+1)Task 1: List all the list
 ps aux | grep list > 02.report.pipe.txt
 root      1204  1.5  1.1 1091836 88848 tty7    Ssl+ 20:19   2:21 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
 casker2+ 23746  0.0  0.0  15968  1108 pts/7    S+   22:50   0:00 grep --color=auto list
@@ -7,21 +8,21 @@ free -h >> 02.report.pipe.txt
               total        used        free      shared  buff/cache   available
 Mem:           7,7G        1,9G        707M        355M        5,1G        5,2G
 Swap:          3,7G        1,0M        3,7G
+
+2)Task 2: Lines of passwd
 tail /proc/cpuinfo >> 02.report.pipe.txt
 
-cpuid level	: 22
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp
-bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs
-bogomips	: 5616.00
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 39 bits physical, 48 bits virtual
-power management:
+
+5)Task:find jpeg
 
 find ~/Pictures -name *.jpg | wc -l >> 02.report.pipe.txt
 
 0
 
-free -h | grep Mem | awk {' print '}
+3)Task:Check memory of machine
+free -h | grep Mem | awk {' print  $2'}
 7,7G
+
+4)Task:Check how many logical cores
+grep -m 1 'cpu cores' /proc/cpuinfo
+cpu cores	: 4

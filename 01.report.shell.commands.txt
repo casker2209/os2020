@@ -1,17 +1,31 @@
+1) Task: echo hello world
 echo hello world
 hello world
+
+2)Task: passwd
 passwd
 Changing password for casker2209.
 Changing password for casker2209.
 Changing password for casker2209.
+
+3) Task: date
 date
 Tue Jan 14 09:03:09 +07 2020
+
+4) Task:hostname
 hostname
 Casker2209
+
+5) Task: arch
 arch
 x86_64
+
+6) Task:uname -a
+
 uname -a
 Linux Casker2209 5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+7) Task: dmesg
 dmesg | tail -n 10
 
 [  162.279668] Code: e8 02 89 c3 4c 89 ff e8 5d fe 12 c2 89 da 44 01 f3 81 fb f7 03 00 00 48 8d 04 95 00 00 00 00 0f 86 8a 00 00 00 49 8b 44 24 70 <c7> 04 90 00 00 00 20 41 f6 44 24 58 01 0f 85 82 00 00 00 49 8b 74
@@ -24,16 +38,28 @@ dmesg | tail -n 10
 [  162.279673] FS:  0000000000000000(0000) GS:ffff9640a6a00000(0000) knlGS:0000000000000000
 [  162.279673] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
 [  162.279674] CR2: ffffba3c7ba9d100 CR3: 000000002140e006 CR4: 00000000003606f0
+
+7)Task uptime
 uptime
  09:15:30 up 52 min,  1 user,  load average: 0,54, 0,62, 0,52
+
+8)Task who am i
 who am i
 who am i
+
+9)Task whoami
 whoami
 casker2209
+
+10)Task who
 who
 casker2209 tty7         2020-01-14 08:23 (:0)
+
+11)Task id
 id
 uid=1000(casker2209) gid=1000(casker2209) groups=1000(casker2209),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),128(sambashare),129(kvm)
+
+12)Task last
 last | tail -n 10
 casker22 tty7         :0               Fri Jan 10 10:14 - crash  (00:03)
 reboot   system boot  5.0.0-32-generic Fri Jan 10 10:13 - 15:43  (05:29)
@@ -43,11 +69,14 @@ casker22 tty7         :0               Thu Jan  9 19:38 - crash  (08:02)
 reboot   system boot  5.0.0-32-generic Thu Jan  9 19:37 - 15:43  (20:05)
 casker22 tty7         :0               Thu Jan  9 17:46 - crash  (01:51)
 reboot   system boot  5.0.0-32-generic Thu Jan  9 17:45 - 15:43  (21:57)
-
 wtmp begins Thu Jan  9 17:45:13 2020
+
+13)Task finger
 finger 
 Login       Name       Tty      Idle  Login Time   Office     Office Phone
 casker2209  Casker     tty7       59  Jan 14 08:23 (:0)
+
+14)Task w
 w
  09:23:18 up  1:00,  1 user,  load average: 0,59, 0,55, 0,52
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT

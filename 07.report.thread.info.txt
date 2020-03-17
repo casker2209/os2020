@@ -1,0 +1,6 @@
+ps -aux | grep firefox
+
+NLWP
+  67
+ls -l /proc/2056/task | wc -l
+73

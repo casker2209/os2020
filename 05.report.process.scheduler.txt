@@ -1,0 +1,19 @@
+ps aux | grep systemd
+ps -p 1341 -o comm=
+cat /proc/1341/sched | grep "switches" | head -n 10 
+
+nr_switches                                  :                  134
+nr_voluntary_switches                        :                   89
+nr_involuntary_switches                      :                   45
+
+cat /proc/sched_debug | grep "switches" | head -n 10
+  .nr_switches                   : 524071
+ S           task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+  .nr_switches                   : 571402
+ S           task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+  .nr_switches                   : 639065
+ S           task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+  .nr_switches                   : 543786
+ S           task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+  .nr_switches                   : 527527
+ S           task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
